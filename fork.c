@@ -1,10 +1,10 @@
-#include <stdio.h>
+    #include <stdio.h>
 
-int main()
-{   
-    fork(); 
-    printf("Hello world:  %d\n", getpid());
-}
+    int main()
+    {   
+        fork(); 
+        printf("Hello world:  %d\n", getpid());
+    }
 
 // it basically created two processes
 // both of them will have different process id
