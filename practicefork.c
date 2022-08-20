@@ -3,6 +3,8 @@
 
 void main()
 {
-    fork();
-    printf("\nThis is some random code");
+    pid_t id;
+    id = fork();
+    printf("\nThis is some random code : %d", id);
+
 }
