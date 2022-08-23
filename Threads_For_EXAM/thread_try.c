@@ -12,7 +12,9 @@ int main()
 
     printf("Outside a Function\n");
 
-    pthread_create(&thread_id, NULL, MyFunction, NULL);
+    int num = 123;
+
+    pthread_create(&thread_id, NULL, MyFunction, &num);
     
     pthread_join(thread_id, NULL);
 }
