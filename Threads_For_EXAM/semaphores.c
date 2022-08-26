@@ -7,13 +7,13 @@ sem_t sem;
 void* thread1(void *args)
 {
     sem_wait(&sem);
-    printf("This is thread 1");
+    printf("This is thread 1.");
     return NULL;
 }
 
 void* thread2(void *args)
 {
-    printf("This is thread 2");
+    printf("This is thread 2.");
     sem_post(&sem);
     return NULL;
 }
