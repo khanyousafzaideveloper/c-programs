@@ -10,10 +10,10 @@ void interrupt_handler(int num)
 int main()
 {
     signal(SIGINT, interrupt_handler);
-    while (1)
+    while (1)           
     {
-        printf("Wasting your time\n");
-        sleep(1);
+        printf("Wasting your time\n");                   
+        sleep(1);               
     }
     return 0;
 }
