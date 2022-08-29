@@ -5,7 +5,7 @@
 void interrupt_handler(int num)
 {
     printf("I won't die\n");
-}
+}   
 
 int main()
 {
