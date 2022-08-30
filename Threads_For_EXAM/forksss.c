@@ -3,6 +3,7 @@
 
 int main()
 {
-    fork();
-    printf("%d\n", getpid());
+    pid_t id;
+    id = fork();
+    printf("%d\n", id);
 }
