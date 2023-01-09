@@ -1,13 +1,21 @@
 #include <iostream>
 using namespace std;
 int main(){
-    int num, sum = 0;
+    int smalln, bign;
+    cout << "Enter a bign: "; cin >> bign;
+    int j=0;
     do{
-        cout <<" Enter a number";
-        cin >> num;
-        sum = num + sum; 
+        cout << "Enter smalln: "; cin >> smalln;
+        if(smalln<bign){ 
+        
+            j+=1;
+            cout << "j: " << j << endl;
+        }
+        else{
+            cout << "Goodbye " ; break;
+        }
     }
-    while(num!=0);
-    cout << "sum is " << sum;
-    return 0;
+        while (j<4);
+        return 0;
 }
+    
