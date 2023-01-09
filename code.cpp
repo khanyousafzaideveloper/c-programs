@@ -1,15 +1,13 @@
 #include <iostream>
 using namespace std;
 int main(){
-    int a;
-    cout << "Enter an integer " << endl;
-    cin >> a;
-    cout << a << -a << a-a << endl;
-    for(int n=a; n<=0; n+=3)
-    {
-        cout << n;
+    int num, sum = 0;
+    do{
+        cout <<" Enter a number";
+        cin >> num;
+        sum = num + sum; 
     }
-    cout << endl;
-    cout << a+20/3 << endl;
-    cout << (a+20)%3 << endl;
+    while(num!=0);
+    cout << "sum is " << sum;
+    return 0;
 }
